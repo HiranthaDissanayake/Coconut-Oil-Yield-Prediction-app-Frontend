@@ -123,7 +123,7 @@ class _CaptureSamplesPageState extends State<CaptureSamplesPage> {
           children: [
             // Coconut icon
             Image.asset(
-              'assets/coconut_icon.png', // Replace with your asset path
+              'assets/coconut_icon.png', 
               height: 32,
               width: 32,
               errorBuilder: (context, error, stackTrace) {
