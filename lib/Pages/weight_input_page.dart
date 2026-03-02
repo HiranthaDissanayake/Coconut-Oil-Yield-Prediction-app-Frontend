@@ -215,7 +215,7 @@ class _WeightInputPageState extends State<WeightInputPage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: const Icon(
-                        Icons.fitness_center,
+                        Icons.scale,
                         color: Colors.white,
                         size: 28,
                       ),
