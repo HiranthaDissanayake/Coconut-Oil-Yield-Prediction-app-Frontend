@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 class CaptureSamplesPage extends StatefulWidget {
-  const CaptureSamplesPage({Key? key}) : super(key: key);
+  const CaptureSamplesPage({super.key});
 
   @override
   State<CaptureSamplesPage> createState() => _CaptureSamplesPageState();
@@ -94,11 +94,11 @@ class _CaptureSamplesPageState extends State<CaptureSamplesPage> {
     return Scaffold(
       backgroundColor: _lightGreen,
       appBar: AppBar(
-        backgroundColor: _lightGreen,
+        backgroundColor: Colors.white,
         elevation: 0,
         title: Row(
           children: [
-            Image.asset('assets/coconut_icon.png', height: 32, width: 32,
+            Image.asset('assets/coconut_icon.png', height: 35, width: 35,
               errorBuilder: (_, __, ___) => const Icon(Icons.eco, color: Color(0xFF6B8E6B), size: 32)),
             const SizedBox(width: 8),
             const Expanded(

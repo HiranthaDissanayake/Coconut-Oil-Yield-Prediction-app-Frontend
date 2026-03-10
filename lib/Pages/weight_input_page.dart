@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 
 class WeightInputPage extends StatefulWidget {
-  const WeightInputPage({Key? key}) : super(key: key);
+  const WeightInputPage({super.key});
 
   @override
   State<WeightInputPage> createState() => _WeightInputPageState();

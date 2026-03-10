@@ -10,7 +10,7 @@ import 'package:http/http.dart' as http;
 // ════════════════════════════════════════════════════════════
 
 class PredictionPage extends StatefulWidget {
-  const PredictionPage({Key? key}) : super(key: key);
+  const PredictionPage({super.key});
 
   @override
   State<PredictionPage> createState() => _PredictionPageState();
@@ -36,7 +36,7 @@ class _PredictionPageState extends State<PredictionPage> {
   static const Color kRed    = Color(0xFFB71C1C);
   static const Color kLRed   = Color(0xFFFFEBEE);
 
-  static const String kApiUrl = 'http://10.151.29.38:5000';
+  static const String kApiUrl = 'http://10.126.152.38:5000';
 
   @override
   void didChangeDependencies() {
@@ -327,7 +327,7 @@ class _PredictionPageState extends State<PredictionPage> {
                     ],
                   ),
                 );
-              }).toList(),
+              }),
             ]),
           ),
           const SizedBox(height: 16),
@@ -458,7 +458,7 @@ class _PredictionPageState extends State<PredictionPage> {
         const SizedBox(height: 8),
         _infoRow(Icons.photo_library, 'Images analysed',
             '$imagesAnalysed photos'),
-        _infoRow(Icons.fitness_center, 'Copra weight',
+        _infoRow(Icons.scale, 'Copra weight',
             '${((_weightG ?? 0) / 1000).toStringAsFixed(2)} kg  '
             '(${_weightG?.toStringAsFixed(0)} g)'),
         const SizedBox(height: 20),
